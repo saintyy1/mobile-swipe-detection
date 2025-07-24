@@ -9,7 +9,7 @@ element.addEventListener('touchend', function(e) {
 
   const diffX = endX - startX;
 
-  if (Math.abs(diffX) > 20) {
+  if (Math.abs(diffX) > 50) {
     if (diffX > 0) {
       alert('Swipe right detected');
     } else {
