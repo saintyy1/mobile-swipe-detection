@@ -1,10 +1,10 @@
 let startX = 0;
 
-element.addEventListener('touchstart', function(e) {
+document.addEventListener('touchstart', function(e) {
   startX = e.touches[0].clientX;
 });
 
-element.addEventListener('touchend', function(e) {
+document.addEventListener('touchend', function(e) {
   const endX = e.changedTouches[0].clientX;
 
   const diffX = endX - startX;
